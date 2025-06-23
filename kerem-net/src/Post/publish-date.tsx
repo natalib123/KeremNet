@@ -13,8 +13,8 @@ const PublishDate: React.FC<DateTime> = (props: DateTime) => {
     let seconds = props.dateTime.getSeconds();
     return(
         <div>
-            <p>${year} - ${month} - ${day}</p>
-            <p>${hours} : ${minutes}: ${seconds}</p>
+            <p>{year} - {month} - {day}</p>
+            <p>{hours} : {minutes}: {seconds}</p>
         </div>
     );
 }
