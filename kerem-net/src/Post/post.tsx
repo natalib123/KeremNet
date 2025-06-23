@@ -1,4 +1,5 @@
 import React from "react";
+import PublisherName from "./publisher-name";
 
 interface PostInfo{
     publisherName: string;
@@ -8,8 +9,10 @@ interface PostInfo{
     publishDate: Date;
 };
 
-const Post: React.FC = (props: PostInfo) => {
-    return(<div></div>);
+const Post: React.FC<PostInfo> = (props: PostInfo) => {
+    return(<div>
+        <PublisherName name={props.publisherName} />
+    </div>);
 };
 
 export default Post;
