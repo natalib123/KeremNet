@@ -1,10 +1,10 @@
 import React from "react";
-import Content from "./content";
-import PublisherName from "./publisher-name";
-import Comments from "./comments";
-import Likes from "./likes";
-import PublishDate from "./publish-date";
-import './post.css';
+import PublisherName from "../PublisherName/PublisherName";
+import Content from "../Content/Content";
+import Comments from "../Comments/Comments";
+import Likes from "../Likes/Likes";
+import PublishDate from "../PublishDate/PublishDate";
+import './Post.css';
 
 interface PostInfo{
     publisherName: string;
