@@ -3,6 +3,7 @@ import Content from "./content";
 import PublisherName from "./publisher-name";
 import Comments from "./comments";
 import Likes from "./likes";
+import PublishDate from "./publish-date";
 
 interface PostInfo{
     publisherName: string;
@@ -16,6 +17,7 @@ const Post: React.FC<PostInfo> = (props: PostInfo) => {
     return(<div>
         <PublisherName name={props.publisherName} />
         <Content text={props.content}/>
+        <PublishDate dateTime={props.publishDate}/>
         <Likes amount={props.likes}/>
         <Comments comments={props.comments}/>
     </div>);
