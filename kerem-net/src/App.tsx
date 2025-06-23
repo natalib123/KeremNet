@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import keremNet from './keremnet.png';
 import Post from './Post/post';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <header>
+        <img src= {keremNet}/>
         <h1>Welcome to Kerem Net!</h1>
       </header>
       <Post publisherName={publisher} 

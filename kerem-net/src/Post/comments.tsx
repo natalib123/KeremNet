@@ -5,11 +5,14 @@ interface CommentsContents{
 }
 
 const Comments: React.FC<CommentsContents> = (props: CommentsContents) => {
-    return (<ul>
+    return (<div>
+        <p>Comments</p>
+        <ul>
             {props.comments.map((comment, index) => (
                 <li key={index}>{comment}</li>
             ))}
-        </ul>);
+        </ul>
+        </div>);
 }
 
 export default Comments;
