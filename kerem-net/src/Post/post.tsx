@@ -1,4 +1,5 @@
 import React from "react";
+import Content from "./content";
 import PublisherName from "./publisher-name";
 
 interface PostInfo{
@@ -12,6 +13,8 @@ interface PostInfo{
 const Post: React.FC<PostInfo> = (props: PostInfo) => {
     return(<div>
         <PublisherName name={props.publisherName} />
+        <Content text={props.content}/>
+        
     </div>);
 };
 
