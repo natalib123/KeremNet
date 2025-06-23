@@ -1,0 +1,20 @@
+{
+    "posts":[
+        {
+            "id": 1,
+            "publisherName": "Natali",
+            "postContent" : "My FIRST Post",
+            "postComments" : ["niceee", "coolll", "6 out of 6!"],
+            "postLikes" : 6,
+            "postDate" : ""
+        },
+        {
+            "id": 2,
+            "publisherName": "Natali",
+            "postContent" : "My Second Post",
+            "postComments" : ["niceee", "coolll", "6 out of 6!"],
+            "postLikes" : 6,
+            "postDate" : ""
+        }
+    ]
+}
