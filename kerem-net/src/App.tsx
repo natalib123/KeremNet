@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import keremNet from './Assets/keremnet.png';
-import Post from './Components/Post/Post';
+import HomePage from './Components/HomePage/HomePage';
 
 function App() {
   return (
@@ -11,6 +10,7 @@ function App() {
         <img src= {keremNet}/>
         <h1>Welcome to Kerem Net!</h1>
       </header>
+      <HomePage/>
     </div>
   );
 }

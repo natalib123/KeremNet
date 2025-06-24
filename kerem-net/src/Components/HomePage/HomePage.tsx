@@ -1,5 +1,5 @@
 import React , {useState, useEffect} from 'react';
-import Post from './Components/Post/Post';
+import Post from '../Post/Post';
 
 const HomePage: React.FC = () => {
   const [posts, setPosts] = useState([]);
