@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import keremNet from './keremnet.png';
+import keremNet from './Assets/keremnet.png';
 import Post from './Components/Post/Post';
 
 function App() {

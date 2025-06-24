@@ -1,5 +1,5 @@
 import React from "react";
-import Like from './like.png';
+import Like from './Assets/like.png'
 
 interface LikesProps{
     amount: number;
