@@ -1,24 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import keremNet from './Assets/keremnet.png';
+import Post from './Components/Post/Post';
 
 function App() {
+  let publisher = 'Natali';
+  let postContent = 'My FIRST Post';
+  let postComments = ['niceee', 'coolll', '6 out of 6!'];
+  let postLikes = 6;
+  let postDate = new Date();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <img src= {keremNet}/>
+        <h1>Welcome to Kerem Net!</h1>
       </header>
+      <Post publisherName={publisher} 
+            content={postContent} 
+            comments={postComments}
+            likes={postLikes}
+            publishDate={postDate}
+      />
     </div>
   );
 }
