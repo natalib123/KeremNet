@@ -1,4 +1,5 @@
 import React from "react";
+import Like from './like.png';
 
 interface LikesProps{
     amount: number;
@@ -7,7 +8,7 @@ interface LikesProps{
 const Likes: React.FC<LikesProps> = (props: LikesProps) => {
     return (<div>
         <p>{props.amount} Likes</p>
-        <img src="https://static-00.iconduck.com/assets.00/white-heart-emoji-512x502-ezd6qau7.png"/>
+        <img src={Like}/>
     </div>);
 }
 
