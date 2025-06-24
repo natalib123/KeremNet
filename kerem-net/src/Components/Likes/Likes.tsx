@@ -1,5 +1,6 @@
 import React from "react";
 import Like from '../../Assets/like.png';
+import './Likes.css';
 
 interface LikesProps{
     amount: number;
