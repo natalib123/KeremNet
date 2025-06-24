@@ -1,13 +1,13 @@
 import React from "react";
 
-interface Publisher{
+interface PublisherNameProps{
     name: string;
 }
 
-const PublisherName: React.FC<Publisher> = (props: Publisher) => {
-    return (<h2>
+const PublisherName: React.FC<PublisherNameProps> = (props: PublisherNameProps) => {
+    return (<h4>
         {props.name}
-    </h2>);
+    </h4>);
 }
 
 export default PublisherName;

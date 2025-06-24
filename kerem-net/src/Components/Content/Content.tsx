@@ -1,10 +1,10 @@
 import React from "react";
 
-interface Data{
+interface ContentProps{
     text: string;
 }
 
-const Content: React.FC<Data> = (props: Data) =>{
+const Content: React.FC<ContentProps> = (props: ContentProps) =>{
     return(
         <div className="container">
             {props.text}

@@ -1,10 +1,10 @@
 import React from "react";
 
-interface CommentsContents{
+interface CommentsProps{
     comments: string[];
 }
 
-const Comments: React.FC<CommentsContents> = (props: CommentsContents) => {
+const Comments: React.FC<CommentsProps> = (props: CommentsProps) => {
     return (<div>
         <p>Comments</p>
         <ul>

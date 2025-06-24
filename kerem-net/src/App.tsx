@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import keremNet from './keremnet.png';
-import Post from './Post/post';
+import Post from './Components/Post/Post';
 
 function App() {
   let publisher = 'Natali';
