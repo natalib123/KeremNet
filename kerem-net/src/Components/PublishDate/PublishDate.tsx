@@ -1,10 +1,10 @@
 import React from "react";
 
-interface DateTime{
+interface PublishDateProps{
     dateTime: Date;
 }
 
-const PublishDate: React.FC<DateTime> = (props: DateTime) => {
+const PublishDate: React.FC<PublishDateProps> = (props: PublishDateProps) => {
     let year = props.dateTime.getFullYear();
     let month = props.dateTime.getMonth() + 1;
     let day = props.dateTime.getDate();
