@@ -3,26 +3,26 @@
         {
             "id": 1,
             "publisherName": "Natali",
-            "postContent" : "My FIRST Post",
-            "postComments" : ["niceee", "coolll", "6 out of 6!"],
-            "postLikes" : 6,
-            "postDate" : "2025-06-24T11:05:00Z"
+            "content" : "My FIRST Post",
+            "comments" : ["niceee", "coolll", "6 out of 6!"],
+            "likes" : 6,
+            "date" : "2025-06-24T11:05:00Z"
         },
         {
             "id": 2,
             "publisherName": "Natali",
-            "postContent" : "My Second Post",
-            "postComments" : ["niceee", "coolll", "6 out of 6!"],
-            "postLikes" : 66,
-            "postDate" : "2025-06-24T11:06:01Z"
+            "content" : "My Second Post",
+            "comments" : ["niceee", "coolll", "6 out of 6!"],
+            "likes" : 66,
+            "date" : "2025-06-24T11:06:01Z"
         },
         {
             "id": 3,
             "publisherName": "Natali",
-            "postContent" : "My Third Post",
-            "postComments" : ["niceee", "coolll", "6 out of 6!"],
-            "postLikes" : 6666,
-            "postDate" : "2025-06-24T11:07:03Z"
+            "content" : "My Third Post",
+            "comments" : ["niceee", "coolll", "6 out of 6!"],
+            "likes" : 6666,
+            "date" : "2025-06-24T11:07:03Z"
         }
 
     ]

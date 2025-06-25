@@ -20,10 +20,10 @@ const HomePage: React.FC = () => {
       <ul>
         {posts.map(post => (
             <Post publisherName= {post.publisherName} 
-              content= {post.postContent} 
-              publishDate= {post.postDate}
-              likes= {post.postLikes}
-              comments= {post.postComments}/>
+              content= {post.content} 
+              publishDate= {post.date}
+              likes= {post.likes}
+              comments= {post.comments}/>
         ))}
       </ul>
     </div>

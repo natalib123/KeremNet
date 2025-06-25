@@ -1,8 +1,8 @@
 export interface PostDTO{
     id: number;
     publisherName: string;
-    postContent: string;
-    postComments: string[];
-    postLikes: number;
-    postDate: string;
+    content: string;
+    comments: string[];
+    likes: number;
+    date: string;
 }
