@@ -1,0 +1,16 @@
+header{
+    background-color: rgb(219, 63, 120);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: rgb(159, 0, 119);
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 5%;
+    height: 5%;
+}
