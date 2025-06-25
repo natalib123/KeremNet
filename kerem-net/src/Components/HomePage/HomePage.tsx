@@ -13,8 +13,6 @@ const HomePage: React.FC = () => {
       .catch(error => console.error('Error fetching data'))
   });
 
-  console.log(posts);
-
   return (
     <div className='posts'>
       <ul>
