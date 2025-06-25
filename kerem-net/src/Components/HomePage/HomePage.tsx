@@ -10,23 +10,17 @@ const HomePage: React.FC = () => {
     .then(data => setPosts(data))
     .catch(error => console.error('Error fetching data'))
   });
-
+  
   return (
-    <div className="Home">
-      <body>
-        <ul>
-            {posts.map(post => (
-              <li key={post["id"]}>
-                <Post publisherName= {post["publisherName"]} 
-                content= {post["postContent"]} 
-                publishDate= {new Date(post["postDate"])}
-                likes= {Number(post["postLikes"])}
-                comments= {post["postComments"]}/>
-              </li>
-            ))}
-        </ul>
-      </body>
-    </div>
+    <ul>
+        {posts.map(post => (
+            <Post publisherName= {post["publisherName"]} 
+              content= {post["postContent"]} 
+              publishDate= {new Date(post["postDate"])}
+              likes= {post["postLikes"]}
+              comments= {post["postComments"]}/>
+        ))}
+    </ul>
   );
 }
 

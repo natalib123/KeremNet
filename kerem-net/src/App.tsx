@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import './App.css';
 import keremNet from './Assets/keremnet.png';
 import HomePage from './Components/HomePage/HomePage';

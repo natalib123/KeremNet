@@ -6,15 +6,24 @@
             "postContent" : "My FIRST Post",
             "postComments" : ["niceee", "coolll", "6 out of 6!"],
             "postLikes" : 6,
-            "postDate" : ""
+            "postDate" : "2025-06-24T11:05:00Z"
         },
         {
             "id": 2,
             "publisherName": "Natali",
             "postContent" : "My Second Post",
             "postComments" : ["niceee", "coolll", "6 out of 6!"],
-            "postLikes" : 6,
-            "postDate" : ""
+            "postLikes" : 66,
+            "postDate" : "2025-06-24T11:06:01Z"
+        },
+        {
+            "id": 3,
+            "publisherName": "Natali",
+            "postContent" : "My Third Post",
+            "postComments" : ["niceee", "coolll", "6 out of 6!"],
+            "postLikes" : 6666,
+            "postDate" : "2025-06-24T11:07:03Z"
         }
+
     ]
 }
