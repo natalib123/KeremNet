@@ -1,27 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from 'react'; 
 import './App.css';
 import keremNet from './Assets/keremnet.png';
-import Post from './Components/Post/Post';
+import HomePage from './Components/HomePage/HomePage';
 
 function App() {
-  let publisher = 'Natali';
-  let postContent = 'My FIRST Post';
-  let postComments = ['niceee', 'coolll', '6 out of 6!'];
-  let postLikes = 6;
-  let postDate = new Date();
   return (
     <div className="App">
       <header>
         <img src= {keremNet}/>
         <h1>Welcome to Kerem Net!</h1>
       </header>
-      <Post publisherName={publisher} 
-            content={postContent} 
-            comments={postComments}
-            likes={postLikes}
-            publishDate={postDate}
-      />
+      <HomePage/>
     </div>
   );
 }

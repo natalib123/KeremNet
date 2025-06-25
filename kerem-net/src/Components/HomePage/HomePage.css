@@ -1,0 +1,9 @@
+.posts{
+    text-align: center;
+    width: 96%;
+}
+
+.ul{
+    display: inline-block;
+    list-style-type: none;
+}
