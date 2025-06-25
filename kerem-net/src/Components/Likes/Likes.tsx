@@ -8,8 +8,8 @@ interface LikesProps{
 
 const Likes: React.FC<LikesProps> = (props: LikesProps) => {
     return (<div>
-        <p>{props.amount} Likes</p>
-        <img src={Like}/>
+        <p className="likes">{props.amount} Likes</p>
+        <img className="likeImg" src={Like}/>
     </div>);
 }
 
