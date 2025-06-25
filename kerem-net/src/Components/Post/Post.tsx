@@ -11,7 +11,7 @@ interface PostProps{
     content: string;
     comments: string[];
     likes: number;
-    publishDate: Date;
+    publishDate: string;
 };
 
 const Post: React.FC<PostProps> = (props: PostProps) => {

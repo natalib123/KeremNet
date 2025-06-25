@@ -4,5 +4,5 @@ export interface PostDTO{
     postContent: string;
     postComments: string[];
     postLikes: number;
-    postDate: Date;
+    postDate: string;
 }
