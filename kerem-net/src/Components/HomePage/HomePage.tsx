@@ -1,5 +1,6 @@
 import React , {useState, useEffect} from 'react';
 import Post from '../Post/Post';
+import './HomePage.css';
 
 const HomePage: React.FC = () => {
   const [posts, setPosts] = useState([]);
@@ -12,7 +13,8 @@ const HomePage: React.FC = () => {
   });
   
   return (
-    <ul>
+    <div className='posts'>
+      <ul>
         {posts.map(post => (
             <Post publisherName= {post["publisherName"]} 
               content= {post["postContent"]} 
@@ -20,7 +22,8 @@ const HomePage: React.FC = () => {
               likes= {post["postLikes"]}
               comments= {post["postComments"]}/>
         ))}
-    </ul>
+      </ul>
+    </div>
   );
 }
 
