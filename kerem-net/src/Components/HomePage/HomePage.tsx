@@ -21,7 +21,7 @@ const HomePage: React.FC = () => {
         {posts.map(post => (
             <Post publisherName= {post.publisherName} 
               content= {post.content} 
-              publishDate= {post.date}
+              publishDate= {new Date(post.date)}
               likes= {post.likes}
               comments= {post.comments}/>
         ))}
