@@ -6,7 +6,7 @@ import { findPostById,
         findPostByNumberLikes,
         findPostByContent
 } from '../Services/postFounder'
-
+const DECIMAL_BASE: number = 10
 const data: string = require('../Model/posts.json');
 
 export const getPosts = (req: Request, res: Response, next: NextFunction) => {
@@ -20,7 +20,7 @@ export const getPosts = (req: Request, res: Response, next: NextFunction) => {
 
 export const getPostById = (req: Request, res: Response, next: NextFunction) => {
   try {
-    const id: number = parseInt(req.params.id, 10);
+    const id: number = parseInt(req.params.id, DECIMAL_BASE);
     const posts: Post[] = JSON.parse(data);
     const post = findPostById(posts, id);
     if (!post) {
@@ -65,7 +65,7 @@ export const getPostByPublisDate = (req: Request, res: Response, next: NextFunct
 
 export const getPostByNumberLikes = (req: Request, res: Response, next: NextFunction) => {
   try {
-    const numberLikes: number = parseInt(req.params.likes, 10);
+    const numberLikes: number = parseInt(req.params.likes, DECIMAL_BASE);
     const posts: Post[] = JSON.parse(data);
     const post = findPostByNumberLikes(posts, numberLikes);
     if (!post) {
