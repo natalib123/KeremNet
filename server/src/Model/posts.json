@@ -1,0 +1,29 @@
+{
+    "posts":[
+        {
+            "id": 1,
+            "publisherName": "Natali",
+            "content" : "My FIRST Post",
+            "comments" : ["niceee", "coolll", "6 out of 6!"],
+            "likes" : 6,
+            "date" : "2025-06-24T11:05:00Z"
+        },
+        {
+            "id": 2,
+            "publisherName": "Natali",
+            "content" : "My Second Post",
+            "comments" : ["niceee", "coolll", "6 out of 6!"],
+            "likes" : 66,
+            "date" : "2025-06-24T11:06:01Z"
+        },
+        {
+            "id": 3,
+            "publisherName": "Natali",
+            "content" : "My Third Post",
+            "comments" : ["niceee", "coolll", "6 out of 6!"],
+            "likes" : 6666,
+            "date" : "2025-06-24T11:07:03Z"
+        }
+
+    ]
+}
