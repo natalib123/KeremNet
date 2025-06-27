@@ -7,7 +7,7 @@ import { findPostById,
         findPostByContent
 } from '../Services/postFounder'
 const DECIMAL_BASE: number = 10
-const data: string = require('../Model/posts.json');
+const data: string = require('../mockDB/posts.json');
 
 export const getPosts = (req: Request, res: Response, next: NextFunction) => {
   try {
