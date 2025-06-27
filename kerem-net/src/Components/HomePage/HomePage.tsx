@@ -7,7 +7,7 @@ const HomePage: React.FC = () => {
   const [posts, setPosts] = useState<PostDTO[]>([]);
 
   useEffect(() => {
-      fetch('http://localhost:3001/posts')
+      fetch('http://localhost:3001/api/posts')
       .then(response => response.text())
       .then(data => setPosts(JSON.parse(data)))
       .catch(error => console.error('Error fetching data'))
