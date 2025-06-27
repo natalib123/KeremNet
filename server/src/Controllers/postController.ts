@@ -1,11 +1,12 @@
 import { Request, Response, NextFunction } from 'express';
 import { Post } from '../Model/Post';
 import { findPostById, 
-        findPostByPublisherName,
-        findPostByPublishDate,
-        findPostByNumberLikes,
-        findPostByContent
+        findPostsByPublisherName,
+        findPostsByPublishDate,
+        findPostsByNumberLikes,
+        findPostsByContent
 } from '../Services/postFounder'
+
 const DECIMAL_BASE: number = 10
 const data: string = require('../mockDB/posts.json');
 
@@ -37,12 +38,12 @@ export const getPostByPublisherName = (req: Request, res: Response, next: NextFu
   try {
     const publisherName: string = req.params.publisherName;
     const posts: Post[] = JSON.parse(data);
-    const post = findPostByPublisherName(posts, publisherName);
-    if (!post) {
-      res.status(404).json({ message: 'Post not found' });
+    const postsWithPublisherName: Post[] = findPostsByPublisherName(posts, publisherName);
+    if (postsWithPublisherName.length == 0) {
+      res.status(404).json({ message: 'Posts not found' });
       return;
     }
-    res.json(post);
+    res.json(postsWithPublisherName);
   } catch (error) {
     next(error);
   }
@@ -52,12 +53,12 @@ export const getPostByPublisDate = (req: Request, res: Response, next: NextFunct
   try {
     const date: string = req.params.date;
     const posts: Post[] = JSON.parse(data);
-    const post = findPostByPublishDate(posts, date);
-    if (!post) {
-      res.status(404).json({ message: 'Post not found' });
+    const postWithPublishDate = findPostsByPublishDate(posts, date);
+    if (postWithPublishDate.length == 0) {
+      res.status(404).json({ message: 'Posts not found' });
       return;
     }
-    res.json(post);
+    res.json(postWithPublishDate);
   } catch (error) {
     next(error);
   }
@@ -67,12 +68,12 @@ export const getPostByNumberLikes = (req: Request, res: Response, next: NextFunc
   try {
     const numberLikes: number = parseInt(req.params.likes, DECIMAL_BASE);
     const posts: Post[] = JSON.parse(data);
-    const post = findPostByNumberLikes(posts, numberLikes);
-    if (!post) {
-      res.status(404).json({ message: 'Post not found' });
+    const postsWithNumberLikes: Post[] = findPostsByNumberLikes(posts, numberLikes);
+    if (postsWithNumberLikes.length == 0) {
+      res.status(404).json({ message: 'Posts not found' });
       return;
     }
-    res.json(post);
+    res.json(postsWithNumberLikes);
   } catch (error) {
     next(error);
   }
@@ -82,12 +83,12 @@ export const getPostByContent = (req: Request, res: Response, next: NextFunction
   try {
     const content: string = req.params.content;
     const posts: Post[] = JSON.parse(data);
-    const post = findPostByContent(posts, content);
-    if (!post) {
-      res.status(404).json({ message: 'Post not found' });
+    const postsWithContent: Post[] = findPostsByContent(posts, content);
+    if (postsWithContent.length == 0) {
+      res.status(404).json({ message: 'Posts not found' });
       return;
     }
-    res.json(post);
+    res.json(postsWithContent);
   } catch (error) {
     next(error);
   }
