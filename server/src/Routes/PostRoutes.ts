@@ -2,19 +2,19 @@ import { Router } from 'express';
 
 import { getPosts, 
         getPostById, 
-        getPostByPublisherName,
-        getPostByPublisDate,
-        getPostByNumberLikes,
-        getPostByContent
+        getPostsByPublisherName,
+        getPostsByPublisDate,
+        getPostsByNumberLikes,
+        getPostsByContent
 } from '../Controllers/postController'
 
 const router: Router = Router()
 
-router.get('/post/', getPosts);
-router.get('/post/:id', getPostById);
-router.get('/post/:publisherName', getPostByPublisherName);
-router.get('/post/:date', getPostByPublisDate);
-router.get('/post/:likes', getPostByNumberLikes);
-router.get('/post/:content', getPostByContent);
+router.get('/posts/', getPosts);
+router.get('/posts/:id', getPostById);
+router.get('/posts/:publisherName', getPostsByPublisherName);
+router.get('/posts/:date', getPostsByPublisDate);
+router.get('/posts/:likes', getPostsByNumberLikes);
+router.get('/posts/:content', getPostsByContent);
 
 export default router;

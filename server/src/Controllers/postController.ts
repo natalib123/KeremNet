@@ -34,7 +34,7 @@ export const getPostById = (req: Request, res: Response, next: NextFunction) => 
   }
 };
 
-export const getPostByPublisherName = (req: Request, res: Response, next: NextFunction) => {
+export const getPostsByPublisherName = (req: Request, res: Response, next: NextFunction) => {
   try {
     const publisherName: string = req.params.publisherName;
     const posts: Post[] = JSON.parse(data);
@@ -49,7 +49,7 @@ export const getPostByPublisherName = (req: Request, res: Response, next: NextFu
   }
 };
 
-export const getPostByPublisDate = (req: Request, res: Response, next: NextFunction) => {
+export const getPostsByPublisDate = (req: Request, res: Response, next: NextFunction) => {
   try {
     const date: string = req.params.date;
     const posts: Post[] = JSON.parse(data);
@@ -64,7 +64,7 @@ export const getPostByPublisDate = (req: Request, res: Response, next: NextFunct
   }
 };
 
-export const getPostByNumberLikes = (req: Request, res: Response, next: NextFunction) => {
+export const getPostsByNumberLikes = (req: Request, res: Response, next: NextFunction) => {
   try {
     const numberLikes: number = parseInt(req.params.likes, DECIMAL_BASE);
     const posts: Post[] = JSON.parse(data);
@@ -79,7 +79,7 @@ export const getPostByNumberLikes = (req: Request, res: Response, next: NextFunc
   }
 };
 
-export const getPostByContent = (req: Request, res: Response, next: NextFunction) => {
+export const getPostsByContent = (req: Request, res: Response, next: NextFunction) => {
   try {
     const content: string = req.params.content;
     const posts: Post[] = JSON.parse(data);
