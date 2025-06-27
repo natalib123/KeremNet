@@ -1,0 +1,10 @@
+.posts{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.ul{
+    display: inline-block;
+    list-style-type: none;
+}

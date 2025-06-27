@@ -11,10 +11,10 @@ import { getPosts,
 const router: Router = Router()
 
 router.get('/posts/', getPosts);
-router.get('/posts/:id', getPostById);
-router.get('/posts/:publisherName', getPostsByPublisherName);
-router.get('/posts/:date', getPostsByPublisDate);
-router.get('/posts/:likes', getPostsByNumberLikes);
-router.get('/posts/:content', getPostsByContent);
+router.get('/posts/id/:id', getPostById);
+router.get('/posts/publisherName/:publisherName', getPostsByPublisherName);
+router.get('/posts/date/:date', getPostsByPublisDate);
+router.get('/posts/likes/:likes', getPostsByNumberLikes);
+router.get('/posts/content/:content', getPostsByContent);
 
 export default router;
